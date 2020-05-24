@@ -85,43 +85,62 @@ Author URL: http://Primebootstrap.com
    <div class="content pt-5">
     <div class="container">
      <div class="row d-flex align-items-stretch py-5">
-      <div class="col-md-7 content-left mt-3">
-       <h1 class="mt-3">Prep Smart. Score Better.</h1>
-       <p class="mt-3 mb-md-5 banner-tagline"> Join India’s largest exam preparation platform. </p>
-       <img src="assets/images/main.png" class="my-1 img-fluid" alt="main image">
-      </div>
-      <div class="col-md-5 content-photo mt-md-0 mt-5 d-flex align-items-start justify-content-end">
-       <div class="card shadow-sm" style="max-width: 450px; width: 90%">
+      <div class="col-md-12 content-photo mt-md-0 mt-5 d-flex align-items-start justify-content-center">
+       <div class="card shadow-sm" style=" width: 90%">
         <div class="card-body d-flex align-items-start">
          <div class="w-100">
-          <p class="lead font-weight-bold text-center mb-2">Get Started with Freshersnow!</p>
-          <p class="text-center mb-2">Boost your exam preparation with us</p>
+          <p class="lead font-weight-bold text-center mb-2">Create Account!</p>
           <form class="form mt-4 bg-light p-4">
-           <div class="input-group mb-3">
-            <div class="input-group-prepend">
-             <span class="input-group-text" id="phone-addon1">+91</span>
+           <div class="row">
+            <div class="col-6">
+             <div class="form-group">
+              <label for="name">Name</label><span style="color: red;">*</span>
+              <input
+               class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-touched has-error"
+               placeholder="Name" ng-model="name" ng-pattern="/(^[A-Za-z0-9-. ]+$)+/" required="true"
+               ng-class="{&quot;has-error&quot;: registrationForm.name.$touched &amp;&amp; registrationForm.name.$invalid}"
+               ng-minlength="4" name="name" type="text">
+             </div>
+             <div class="form-group">
+              <label for="username">Username</label><span style="color: red;">*</span>
+              <input class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength"
+               placeholder="Username" ng-model="username" required="true"
+               ng-class="{&quot;has-error&quot;: registrationForm.username.$touched &amp;&amp; registrationForm.username.$invalid}"
+               ng-minlength="4" name="username" type="text">
+             </div>
+             <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input class="form-control" placeholder="Enter E-Mail Id" name="email" type="text">
+             </div>
             </div>
-            <input type="text" class="form-control form-control-lg" placeholder="Enter Mobile Number"
-             aria-label="phonenumber" aria-describedby="phone-addon1">
+            <div class="col-6">
+             <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input class="form-control" placeholder="Enter your Mobile Number where you receive an OTP" name="phone"
+               type="text">
+             </div>
+             <div class="form-group">
+              <label for="password">Password:</label>
+              <input class="form-control" placeholder="Enter Password" name="password" type="password">
+             </div>
+             <div class="form-group">
+              <label for="Confirmpassword">Password:</label>
+              <input class="form-control" placeholder="Password Confirmation" name="Confirmpassword" type="password">
+             </div>
+            </div>
            </div>
-           <button class="btn btn-primary btn-large btn-block" type="submit">Continue</button>
+           <div class="form-group">
+            <input type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+             By Creating An Account, You Agree To <b>Freshers Now | Free Online Mock Test Series Portal</b> <a
+              href="https://mocktest.freshersnow.com/page/registration-terms-2"
+              title="Freshers Now | Free Online Mock Test Series Portal" target="_blank">Terms And Conditions</a>
+            </label>
+           </div>
+           <a href="home.html" class="btn mt-1 btn-info btn-lg ml-auto">Cancel</a>
+           <button href="signup.html" class="btn mt-1 btn-success btn-lg float-right" type="submit">Register
+            Now</button>
           </form>
-          <div class="d-flex position-relative">
-           <p class="or-block">
-            <span class="bg-white p-1">OR</span>
-           </p>
-           <hr class="position-absolute w-100 bg-light" style="height:1px">
-          </div>
-          <button class="btn mt-1 btn-outline-primary btn-lg btn-block" type="submit">Continue with
-           Email and Password</button>
-          <div class="d-flex position-relative">
-           <p class="or-block">
-            <span class="bg-white p-1">OR</span>
-           </p>
-           <hr class="position-absolute w-100 bg-light" style="height:1px">
-          </div>
-          <button class="btn mt-1 btn-outline-secondary btn-lg btn-block" type="submit">Continue with
-           Registration</button>
          </div>
         </div>
        </div>
@@ -132,125 +151,7 @@ Author URL: http://Primebootstrap.com
    </div>
   </div>
   <!-- //index-block1 -->
-  <!-- index-block2 -->
-  <div id="SelectYourExam"></div>
-  <!-- /index-block2 -->
-  <div class="pbs-index-block4">
-   <div class="features-bg py-5">
-    <!-- features15 block -->
-    <div class="container py-md-3">
-     <div class="heading text-center mx-auto">
-      <h3 class="head">Gradeup Test Series</h3>
-      <p class="my-3 head">Attempt our exam-wise mock tests daily to improve your score</p>
-     </div>
-     <div class="row">
-      <div class="col-md-4 features15-col-text">
-       <a href="#url" class="d-flex flex-wrap feature-unit align-items-center">
-        <div class="col-sm-3">
-         <div class="features15-info">
-          <span class="far fa-lightbulb" aria-hidden="true"></span>
-         </div>
-        </div>
-        <div class="col-sm-9 mt-sm-0 mt-4">
-         <div class="features15-para">
-          <h4>Designed by exam experts</h4>
-         </div>
-        </div>
-       </a>
-      </div>
-      <div class="col-md-4 features15-col-text">
-       <a href="#url" class="d-flex flex-wrap feature-unit align-items-center">
-        <div class="col-sm-3">
-         <div class="features15-info">
-          <span class="far fa-clock" aria-hidden="true"></span>
-         </div>
-        </div>
-        <div class="col-sm-9 mt-sm-0 mt-4">
-         <div class="features15-para">
-          <h4>Based on the latest exam patterns</h4>
-         </div>
-        </div>
-       </a>
-      </div>
-      <div class="col-md-4 features15-col-text">
-       <a href="#url" class="d-flex flex-wrap feature-unit align-items-center">
-        <div class="col-sm-3">
-         <div class="features15-info">
-          <span class="fas fa-graduation-cap" aria-hidden="true"></span>
-         </div>
-        </div>
-        <div class="col-sm-9 mt-sm-0 mt-4">
-         <div class="features15-para">
-          <h4>Detailed Solutions & Performance Analysis</h4>
-         </div>
-        </div>
-       </a>
-      </div>
-      <div class="col-md-4 features15-col-text">
-       <a href="#url" class="d-flex flex-wrap feature-unit align-items-center">
-        <div class="col-sm-3">
-         <div class="features15-info">
-          <span class="fas fa-certificate" aria-hidden="true"></span>
-         </div>
-        </div>
-        <div class="col-sm-9 mt-sm-0 mt-4">
-         <div class="features15-para">
-          <h4>All India Rank & Scorecard</h4>
-         </div>
-        </div>
-       </a>
-      </div>
-      <div class="col-md-4 features15-col-text">
-       <a href="#url" class="d-flex flex-wrap feature-unit align-items-center">
-        <div class="col-sm-3">
-         <div class="features15-info">
-          <span class="fas fa-calendar-alt" aria-hidden="true"></span>
-         </div>
-        </div>
-        <div class="col-sm-9 mt-sm-0 mt-4">
-         <div class="features15-para">
-          <h4>Day-wise preparation plan</h4>
-         </div>
-        </div>
-       </a>
-      </div>
-      <div class="col-md-4 features15-col-text">
-       <a href="#url" class="d-flex flex-wrap feature-unit align-items-center">
-        <div class="col-sm-3">
-         <div class="features15-info">
-          <span class="fas fa-comments" aria-hidden="true"></span>
-         </div>
-        </div>
-        <div class="col-sm-9 mt-sm-0 mt-4">
-         <div class="features15-para">
-          <h4>Discussion board for clearing doubts</h4>
-         </div>
-        </div>
-       </a>
-      </div>
-     </div>
-     <div>
-      <!-- features15 block -->
-     </div>
-    </div>
-   </div>
-  </div>
-  <!-- content-with-photo17 -->
-  <section class="pbs-index-block7 py-5">
-   <div class="container py-md-3">
-    <div class="row cwp17-two align-items-center">
-     <div class="col-6 cwp17-text">
-      <h2>Great features app that everyone Love</h2>
-      <p>Over 10 million aspirants use FreshersNow App for their exam prep. </p>
-      <a href="#signup.html">Learn more &raquo;</a>
-     </div>
-     <div class="col-6 cwp17-image">
-      <img src="assets/images/mobile-app.jpg" class="img-fluid" alt="" />
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- content-with-photo17 -->
+
   <!-- footer-28 block -->
   <section class="pbs-market-footer">
    <footer class="footer-28">

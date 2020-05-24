@@ -7246,8 +7246,7 @@
   
   button,
   input,
-  select {
-    -webkit-appearance: none;
+  select { 
     outline: none;
     font-family: 'Nunito', sans-serif; }
   

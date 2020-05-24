@@ -1,0 +1,27 @@
+/* nav tabs */
+.nav-tabs .nav-link{
+ border: 0px;
+ font-size: 16px;
+ text-transform: uppercase;
+ padding: 10px 0px;
+ margin-right: 15px; 
+ color: #333;
+
+}
+/* .nav-tabs .nav-item::after{
+ content: '|';
+ position: absolute;
+ right: 0px;
+ top: 11px;
+} */
+.nav-tabs .nav-link.active{
+ color: #50b167;
+ font-weight: 700;
+ border-bottom: 4px solid #50b167;
+ transition: border 0.1s ease-in;
+}
+.nav-tabs .nav-item{
+ position: relative;
+ margin-bottom: 0px;
+ /* margin-right: 15px; */
+}
