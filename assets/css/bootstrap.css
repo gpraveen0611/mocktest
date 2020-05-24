@@ -7301,17 +7301,6 @@
   .heading {
     max-width: 750px; }
   
-  .heading h3 {
-    font-size: 35px;
-    line-height: 40px;
-    color: var(--title-color);
-    font-weight: 500; }
-  
-  .heading p {
-    color: var(--text-color);
-    font-size: 16px;
-    line-height: 24px; }
-  
   @media (max-width: 767px) {
     .heading h3 {
       font-size: 30px;
